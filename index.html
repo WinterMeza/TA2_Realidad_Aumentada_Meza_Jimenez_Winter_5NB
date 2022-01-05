@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realidad Aumentada</title>
+    <link rel="icon" href="img/icon.jpg">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<!-- Asignatura: Interfaces y Multimedia.
+     Estudiante: Winter Aníbal Meza Jiménez.
+     Curso: 5 Nivel "B".
+     Docente: Jonny Vicente Pérez Véliz.
+     Fecha: Miércoles, 5 de enero de 2021.
+    -->
+<body>
+    <a-scene arjs>
+        <a-marker preset="hiro">
+            <a-entity position="0 0 0" scale="0.1 0.1 0.1">
+                <!--FIGURA PLANA (CUADRADO)-->
+                <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="blue"></a-plane>
+                <!--FIGURA CILINDRO-->
+                <a-cylinder position="0 2 4" radius="0.5" height="4" color="red"></a-cylinder>        
+                <!--FIGURA CONO-->
+                <a-cone color="green" radius-bottom="2" radius-top="0.5"></a-cone>
+        </a-marker>
+        <a-entity camera position="0 0 0"></a-entity>
+    </a-scene>
+</body>
+
+</html>
